@@ -11,7 +11,7 @@ module.exports = (envvarOrArrayOfEnvvars) => {
   }
 
   _.each(envvars, (envvar) => {
-    if (_.isEmpty(envvar)) {
+    if (_.isEmpty(process.env[envvar])) {
       throw new Error(util.format('Process enviroment %s must be defined', envvar));
     }
   });
