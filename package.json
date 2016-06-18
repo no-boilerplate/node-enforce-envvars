@@ -1,6 +1,6 @@
 {
   "name": "enforce-envvars",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Enforces existence of necessary envvars",
   "main": "index.js",
   "scripts": {
